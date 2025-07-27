@@ -1,0 +1,11 @@
+soc-analyst-labs/
+├── lab1-network-scanning/
+│   ├── README.md (steps, screenshots, findings)
+│   └── scan-results.txt
+├── lab2-wazuh-siem/
+│   ├── README.md
+│   └── screenshots/
+├── lab3-sysmon-windows/
+│   └── README.md
+└── lab4-intrusion-detection/
+    └── README.md
