@@ -1,18 +1,35 @@
-# HomeLab
-HomeLab projects
-# 🧪 Jack's Cybersecurity Homelab
+Hello, I'm Jack
 
-This is my personal homelab, built to develop real-world IT and cybersecurity skills as I pursue a career in SOC analysis and offensive security.
+I am a recent Business Information Technology - Cybersecurity Management Analytics graduate with a profound interest in technology and a dedication to solving complex problems.
 
-## 💡 Goals:
-- Master Active Directory and Group Policy
-- Build and monitor a segmented network with pfSense
-- Practice penetration testing using Kali Linux
-- Deploy a SIEM (Wazuh) for endpoint monitoring
+Objective:
 
-## 🧰 Tools Used:
-- VirtualBox & UTM on macOS M3
-- Windows Server 2022
-- Kali Linux ARM
-- Ubuntu Server
-- pfSense (external device planned)
+My journey in information technology has led me to develop a passion for cybersecurity, and I am now eager to transition into this field, specifically aiming to join a Security Operations Center (SOC) as a Tier 1 Analyst.
+
+Skills
+[Provide skills and associated project. Make sure to hyperlink the project - Remove this afterwards]]
+
+"Skill	Associated Project
+SIEM Implementation and Log Analysis	Detection Lab
+Network Traffic Monitoring and Attack Detection	Detection Lab
+Security Automation with Shuffle SOAR	SOC Automation Lab
+Incident Response Planning and Execution	SOC Automation Lab
+Case Management with TheHive	SOC Automation Lab
+Scripting and Automation for Threat Mitigation	SOC Automation Lab"
+
+Tools
+[Provide tools and break them down into categories. Use ChatGPT to help create the link - Remove this afterwards]]
+
+Network
+  
+Endpoint
+ 
+SIEM
+  
+Certifications
+[Provide certifications that you have obtained. Use ChatGPT to help create the link - Remove this afterwards]]
+
+    
+Projects
+Detection Lab
+SOC Automation Project
