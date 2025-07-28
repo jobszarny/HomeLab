@@ -8,30 +8,85 @@ Objective:
 
 My journey in information technology has led me to develop a passion for cybersecurity, and I am now eager to transition into this field, specifically aiming to join a Security Operations Center (SOC) as a Tier 1 Analyst.
 
-Skills
-[Provide skills and associated project. Make sure to hyperlink the project - Remove this afterwards]]
+Skills:
 
-"Skill	Associated Project
-SIEM Implementation and Log Analysis	Detection Lab
-Network Traffic Monitoring and Attack Detection	Detection Lab
-Security Automation with Shuffle SOAR	SOC Automation Lab
-Incident Response Planning and Execution	SOC Automation Lab
-Case Management with TheHive	SOC Automation Lab
-Scripting and Automation for Threat Mitigation	SOC Automation Lab"
+- Network & Reconnaissance Skills
+- Log Analysis & SIEM Skills
+- Endpoint Security & Monitoring
+- Intrusion Detection & Prevention
+- Malware Analysis Fundamentals
+- Incident Response & Reporting
+- General Blue Team & Professional Skills
 
-Tools
-[Provide tools and break them down into categories. Use ChatGPT to help create the link - Remove this afterwards]]
+Tools:
 
-Network
+Reconnaissance & Vulnerability Scanning:
+
+-Nmap – Network scanning, host discovery, service and OS enumeration
+
+-Nikto – Web server vulnerability and misconfiguration scanner
+
+-cURL / Wget – Basic web requests and service testing
+
+
+Endpoint Security & Monitoring:
+
+-Sysmon – Windows event and process logging
+
+-Windows Event Viewer – Native tool for analyzing Windows logs
+
+-Auditd – Linux auditing and logging tool
+
+-UFW / Firewalld – Linux firewall configuration
+
+-Task Manager & Process Explorer (Windows) – Process and service monitoring
+
+
+SIEM & Log Analysis:
+
+-Wazuh – Open-source SIEM platform (Docker or standalone)
+
+-ELK Stack (Elasticsearch, Logstash, Kibana) – Log ingestion, search, and visualization
+
+-Graylog – Log management and analysis
+
+-Splunk Free – Industry-leading SIEM (trial version)
+
+-Intrusion Detection & Prevention
+
+-Snort – Network-based IDS/IPS for Linux/Windows
+
+
+Web Application Security:
+
+-Burp Suite Community – Web proxy and manual web vulnerability testing
+
+-OWASP ZAP – Alternative open-source web application vulnerability scanner
+
+Malware Analysis & Investigation:
+-file, strings, md5sum, sha256sum – Linux CLI tools for basic malware static analysis
+
+
+
+General Blue Team/Forensics:
+
+-Wireshark – Network packet capture and analysis
+
+-tcpdump – Command-line packet sniffer
+
+-Autopsy/Sleuth Kit – Open-source digital forensics platform (optional)
+
+Supporting Tools: 
+
+-Linux Terminal/Shell – For executing and automating tool workflows
+
+-PowerShell (Windows) – Scripting and automation for detection/response
+
+-Markdown Editors (VS Code, Typora, etc.) – Documentation and reporting
   
-Endpoint
- 
-SIEM
-  
-Certifications
-[Provide certifications that you have obtained. Use ChatGPT to help create the link - Remove this afterwards]]
+Certifications:
 
+()
     
-Projects
-Detection Lab
-SOC Automation Project
+Projects:
+-Network Reconnaissance (Nmap & Nikto)
