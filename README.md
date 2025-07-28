@@ -69,15 +69,15 @@ Step 3: Run Nikto Scan
 
 Explanation: 
   Before Execeution:
-    - "nikto" runs the web vulknerability scanner
-    - "-h" specifies the host (IP)
-    - IP at end of command line is the target
-
-  Findings: 
-    - X-Frame-Options header is missing so the possibility of clickjacking rises
-    - X-Content-Type-Options header is missing so MIME-type sniffing risk is heightened (this could lead to a Cross-Site Scripting Attack due to the browser not guessing the correct content file type)
-    - The Apache/2.4.52 is outdated which can lead to potential CVE's (Common Vulnerabilities and Exposures) so the system could be vulnerable if not updated
-    - ETag (Entity Tag, header used for HTTP web caching and performance that uniquely identifies the version of the file) leaks inodes (files unique ID), mtime (last modified timestamp), and the file size
+  - "nikto" runs the web vulknerability scanner
+  - "-h" specifies the host (IP)
+  - IP at end of command line is the target
+  - 
+  Findings:
+  - X-Frame-Options header is missing so the possibility of clickjacking rises
+  - X-Content-Type-Options header is missing so MIME-type sniffing risk is heightened (this could lead to a Cross-Site Scripting Attack due to the browser not guessing the correct content file type)
+  - The Apache/2.4.52 is outdated which can lead to potential CVE's (Common Vulnerabilities and Exposures) so the system could be vulnerable if not updated
+  - ETag (Entity Tag, header used for HTTP web caching and performance that uniquely identifies the version of the file) leaks inodes (files unique ID), mtime (last modified timestamp), and the file size
 
 
 
