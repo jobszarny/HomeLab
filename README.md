@@ -52,7 +52,8 @@ SIEM & Log Analysis:
 
 -Splunk Free – Industry-leading SIEM (trial version)
 
--Intrusion Detection & Prevention
+
+Intrusion Detection & Prevention:
 
 -Snort – Network-based IDS/IPS for Linux/Windows
 
