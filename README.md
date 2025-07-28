@@ -1,7 +1,7 @@
 Lab 1: Network Reconnaissance (Nmap & Nikto)
 Objective
 
-The objective of this lab is to refine my reconnaissance skills that are used daily by SOC Analysts. In this lab I will be setting up a target VM (Ubuntu) then utilizing the tools within Kali Linux to retrieve information about it. Some information I will be collecting is the target's IP, nmap scan, and a nikto scan. The results from the lab will be posted with explanations as to how I reached them and anything else needed to be specified as well.  
+The objective of this lab is to refine my reconnaissance skills that are used daily by SOC Analysts. In this lab I will be setting up a target VM (Ubuntu) then utilizing the tools within Kali Linux to retrieve information about it. I will be collecting the target's information by using its IP, running an nmap scan, and a nikto scan. The results from the lab will be posted with explanations as to how I reached them and anything else needed to be specified as well.  
 
 Skills Learned
 - Network Scanning
