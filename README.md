@@ -72,7 +72,6 @@ Explanation:
   - "nikto" runs the web vulknerability scanner
   - "-h" specifies the host (IP)
   - IP at end of command line is the target
-  - 
   Findings:
   - X-Frame-Options header is missing so the possibility of clickjacking rises
   - X-Content-Type-Options header is missing so MIME-type sniffing risk is heightened (this could lead to a Cross-Site Scripting Attack due to the browser not guessing the correct content file type)
