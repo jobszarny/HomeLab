@@ -1,93 +1,97 @@
-Hello, I'm Jack
+Splunk Lab 1: Log Ingestion and Parsing + Basic Search and Filtering 
 
-<a href="https://linkedin.com/in/jack-obszarny/"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+Objective
 
-I am a recent Business Information Technology - Cybersecurity Management Analytics graduate with a profound interest in technology and a dedication to solving complex problems.
+The objective of this lab is to break into the well known SIEM software Splunk. The basics can never be overlooked and in this lab I will be showcasing my steps and processes for how to ingest, parse, searh, and filter new logs. There are seven different logs that were ingested that all serve different purposes but for this lab we are just going over how to set Splunk up to be used. The goal of doing this is to become comfortable with using Splunk Enterprise so I can continue to grow my knowledge and expand my abilities in labs. 
 
-Objective:
+Skills Learned
 
-My journey in information technology has led me to develop a passion for cybersecurity, and I am now eager to transition into this field, specifically aiming to join a Security Operations Center (SOC) as a Tier 1 Analyst.
+Log ingestion and field extraction for custom log types
+SPL proficiency in querying and transforming log data
+Event filtering to isolate patterns and anomalies
+Reporting on most frequent hosts, users, and errors
 
-Skills:
+Tools Used
 
-- Network & Reconnaissance Skills
-- Log Analysis & SIEM Skills
-- Endpoint Security & Monitoring
-- Intrusion Detection & Prevention
-- Malware Analysis Fundamentals
-- Incident Response & Reporting
-- General Blue Team & Professional Skills
-
-Tools:
-
-Reconnaissance & Vulnerability Scanning:
-
--Nmap – Network scanning, host discovery, service and OS enumeration
-
--Nikto – Web server vulnerability and misconfiguration scanner
-
--cURL / Wget – Basic web requests and service testing
-
-
-Endpoint Security & Monitoring:
-
--Sysmon – Windows event and process logging
-
--Windows Event Viewer – Native tool for analyzing Windows logs
-
--Auditd – Linux auditing and logging tool
-
--UFW / Firewalld – Linux firewall configuration
-
--Task Manager & Process Explorer (Windows) – Process and service monitoring
-
-
-SIEM & Log Analysis:
-
--Wazuh – Open-source SIEM platform (Docker or standalone)
-
--ELK Stack (Elasticsearch, Logstash, Kibana) – Log ingestion, search, and visualization
-
--Graylog – Log management and analysis
-
--Splunk Free – Industry-leading SIEM (trial version)
-
-
-Intrusion Detection & Prevention:
-
--Snort – Network-based IDS/IPS for Linux/Windows
-
-
-Web Application Security:
-
--Burp Suite Community – Web proxy and manual web vulnerability testing
-
--OWASP ZAP – Alternative open-source web application vulnerability scanner
-
-Malware Analysis & Investigation:
--file, strings, md5sum, sha256sum – Linux CLI tools for basic malware static analysis
+Splunk Web Interface ▸ Used for log ingestion, field extraction, and executing SPL queries.
+Splunk Add Data Wizard ▸ Uploaded and indexed custom log files.
+Field Extractor Tool ▸ Parsed log data to extract fields like IP, user, status code, etc.
+SPL (Search Processing Language) ▸ Used commands like stats, table, top, sort, where, head.
+Sample Log Files:
+▸ Apache access logs
+▸ NGINX logs
+▸ Windows Event Logs (.evtx or text)
+▸ Linux syslog files
+Web Browser ▸ Accessed Splunk via http://localhost:8000.
+Text Editor (e.g., Notepad++, VS Code) ▸ Opened and reviewed raw log files before ingestion.
+Terminal or Command Prompt ▸ Optional: Used to inspect or tail logs before uploading.
+Operating System Logs ▸ Pulled system-generated logs from Windows or Linux environments.
 
 
 
-General Blue Team/Forensics:
+Ingestion + Parse Step 1: 
 
--Wireshark – Network packet capture and analysis
+<img width="1465" height="819" alt="add1" src="https://github.com/user-attachments/assets/cc512bcd-d5b7-4dd2-b706-cae14f888d33" />
 
--tcpdump – Command-line packet sniffer
+- Go to Settings and find Add Data on the left of the drop menu
 
--Autopsy/Sleuth Kit – Open-source digital forensics platform (optional)
+Ingestion + Parse Step 2:
 
-Supporting Tools: 
+<img width="1427" height="820" alt="add2" src="https://github.com/user-attachments/assets/ac1fd1f6-be55-417b-a62d-8c3826198585" />
 
--Linux Terminal/Shell – For executing and automating tool workflows
+- After clicking on Add Data, select Upload on the bottom left of the page
 
--PowerShell (Windows) – Scripting and automation for detection/response
+Ingestion + Parse Step 3: 
 
--Markdown Editors (VS Code, Typora, etc.) – Documentation and reporting
-  
-Certifications:
+<img width="1454" height="808" alt="add3" src="https://github.com/user-attachments/assets/b259a789-1c5e-46ce-8a74-e43b92faccaa" />
 
-()
-    
-Projects:
--Network Reconnaissance (Nmap & Nikto)
+- Select the source you want to add with the logs, check the preview before adding to ensure it's the correct file, then upload. 
+
+Ingestion + Parse Step 4: 
+
+<img width="1458" height="830" alt="add4" src="https://github.com/user-attachments/assets/736488cb-103f-40b4-ba1e-6a5df6106843" />
+
+- Now you must select the source type as this will ensure your logs are correctly parsed, my source was Apache Logs so I must select "access_combined" as this works with my log type. 
+
+Ingestion + Parse Step 5: 
+
+<img width="1467" height="808" alt="add5" src="https://github.com/user-attachments/assets/cfb839a8-d457-4671-acfa-12c5b8c283c3" />
+
+- Input Settings is next and I left mine on constant value while making sure the host is correct and attaching the index I wish for the file to used within. 
+
+Ingestion + Parse Step 6: 
+
+<img width="1464" height="367" alt="add6" src="https://github.com/user-attachments/assets/dbb8b927-fc93-4dd6-bd40-327054238dcd" />
+
+- Review the details of adding your data before you submit, this page shows all the major details and you must submit when finished.
+
+Ingestion + Parse Step 7: 
+
+<img width="1466" height="524" alt="add7" src="https://github.com/user-attachments/assets/79d83688-ca88-435a-84e1-7978b78a2775" />
+
+- After submitting, there's options to start searching within your logs, extract them, add more data, download apps to have more options with the data, or you can build a dashboard.
+
+
+
+
+Next: Basic Search and Filtering 
+
+
+Basic Search and Filtering Step 1: 
+
+
+Basic Search and Filtering Step 2: 
+
+
+Basic Search and Filtering Step 3: 
+
+
+Basic Search and Filtering Step 4: 
+
+
+Basic Search and Filtering Step 5: 
+
+
+Basic Search and Filtering Step 6: 
+
+
