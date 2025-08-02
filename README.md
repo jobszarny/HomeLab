@@ -23,9 +23,6 @@ Tools Used
    - Windows Event Logs (.evtx or text)
    - Linux syslog files
 - Web Browser ▸ Accessed Splunk via http://localhost:8000.
-- Text Editor (e.g., Notepad++, VS Code) ▸ Opened and reviewed raw log files before ingestion.
-- Terminal or Command Prompt ▸ Optional: Used to inspect or tail logs before uploading.
-- Operating System Logs ▸ Pulled system-generated logs from Windows or Linux environments.
 
 
 
