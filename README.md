@@ -68,11 +68,13 @@ Step 3: Run Nikto Scan
 <img width="1470" height="956" alt="Screenshot 2025-07-28 at 10 28 53 AM" src="https://github.com/user-attachments/assets/cfd7320c-2357-4d60-9317-4beb91a722c6" />
 
 Explanation: 
-  Before Execeution:
+  
+Before Execeution:
   - "nikto" runs the web vulknerability scanner
   - "-h" specifies the host (IP)
   - IP at end of command line is the target
-  Findings:
+
+Findings:
   - X-Frame-Options header is missing so the possibility of clickjacking rises
   - X-Content-Type-Options header is missing so MIME-type sniffing risk is heightened (this could lead to a Cross-Site Scripting Attack due to the browser not guessing the correct content file type)
   - The Apache/2.4.52 is outdated which can lead to potential CVE's (Common Vulnerabilities and Exposures) so the system could be vulnerable if not updated
