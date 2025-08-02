@@ -13,19 +13,19 @@ Reporting on most frequent hosts, users, and errors
 
 Tools Used
 
-Splunk Web Interface ▸ Used for log ingestion, field extraction, and executing SPL queries.
-Splunk Add Data Wizard ▸ Uploaded and indexed custom log files.
-Field Extractor Tool ▸ Parsed log data to extract fields like IP, user, status code, etc.
-SPL (Search Processing Language) ▸ Used commands like stats, table, top, sort, where, head.
-Sample Log Files:
-▸ Apache access logs
-▸ NGINX logs
-▸ Windows Event Logs (.evtx or text)
-▸ Linux syslog files
-Web Browser ▸ Accessed Splunk via http://localhost:8000.
-Text Editor (e.g., Notepad++, VS Code) ▸ Opened and reviewed raw log files before ingestion.
-Terminal or Command Prompt ▸ Optional: Used to inspect or tail logs before uploading.
-Operating System Logs ▸ Pulled system-generated logs from Windows or Linux environments.
+- Splunk Web Interface ▸ Used for log ingestion, field extraction, and executing SPL queries.
+- Splunk Add Data Wizard ▸ Uploaded and indexed custom log files.
+- Field Extractor Tool ▸ Parsed log data to extract fields like IP, user, status code, etc.
+- SPL (Search Processing Language) ▸ Used commands like stats, table, top, sort, where, head.
+- Sample Log Files:
+ - Apache access logs
+ - NGINX logs
+ - Windows Event Logs (.evtx or text)
+ - Linux syslog files
+- Web Browser ▸ Accessed Splunk via http://localhost:8000.
+- Text Editor (e.g., Notepad++, VS Code) ▸ Opened and reviewed raw log files before ingestion.
+- Terminal or Command Prompt ▸ Optional: Used to inspect or tail logs before uploading.
+- Operating System Logs ▸ Pulled system-generated logs from Windows or Linux environments.
 
 
 
