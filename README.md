@@ -1,8 +1,8 @@
-Splunk Lab 1: Log Ingestion and Parsing + Basic Search and Filtering 
+Splunk Lab 1: Log Ingestion and Extracting + Basic Search and Filtering 
 
 Objective
 
-The objective of this lab is to break into the well known SIEM software Splunk. The basics can never be overlooked and in this lab I will be showcasing my steps and processes for how to ingest, parse, searh, and filter new logs. There are seven different logs that were ingested that all serve different purposes but for this lab we are just going over how to set Splunk up to be used. The goal of doing this is to become comfortable with using Splunk Enterprise so I can continue to grow my knowledge and expand my abilities in labs. 
+The objective of this lab is to break into the well known SIEM software Splunk. The basics can never be overlooked and in this lab I will be showcasing my steps and processes for how to ingest, extract, searh, and filter new logs. There are seven different logs that were ingested that all serve different purposes but for this lab we are just going over how to set Splunk up to be used. The goal of doing this is to become comfortable with using Splunk Enterprise so I can continue to grow my knowledge and expand my abilities in labs. 
 
 Skills Learned
 
@@ -26,49 +26,71 @@ Tools Used
 
 
 
-Ingestion + Parse Step 1: 
+Ingestion + Extract Step 1: 
 
 <img width="1465" height="819" alt="add1" src="https://github.com/user-attachments/assets/cc512bcd-d5b7-4dd2-b706-cae14f888d33" />
 
 - Go to Settings and find Add Data on the left of the drop menu
 
-Ingestion + Parse Step 2:
+Ingestion + Extract Step 2:
 
 <img width="1427" height="820" alt="add2" src="https://github.com/user-attachments/assets/ac1fd1f6-be55-417b-a62d-8c3826198585" />
 
 - After clicking on Add Data, select Upload on the bottom left of the page
 
-Ingestion + Parse Step 3: 
+Ingestion + Extract Step 3: 
 
 <img width="1454" height="808" alt="add3" src="https://github.com/user-attachments/assets/b259a789-1c5e-46ce-8a74-e43b92faccaa" />
 
 - Select the source you want to add with the logs, check the preview before adding to ensure it's the correct file, then upload. 
 
-Ingestion + Parse Step 4: 
+Ingestion + Extract Step 4: 
 
 <img width="1458" height="830" alt="add4" src="https://github.com/user-attachments/assets/736488cb-103f-40b4-ba1e-6a5df6106843" />
 
 - Now you must select the source type as this will ensure your logs are correctly parsed, my source was Apache Logs so I must select "access_combined" as this works with my log type. 
 
-Ingestion + Parse Step 5: 
+Ingestion + Extract Step 5: 
 
 <img width="1467" height="808" alt="add5" src="https://github.com/user-attachments/assets/cfb839a8-d457-4671-acfa-12c5b8c283c3" />
 
 - Input Settings is next and I left mine on constant value while making sure the host is correct and attaching the index I wish for the file to used within. 
 
-Ingestion + Parse Step 6: 
+Ingestion + Extract Step 6: 
 
 <img width="1464" height="367" alt="add6" src="https://github.com/user-attachments/assets/dbb8b927-fc93-4dd6-bd40-327054238dcd" />
 
 - Review the details of adding your data before you submit, this page shows all the major details and you must submit when finished.
 
-Ingestion + Parse Step 7: 
+Ingestion + Extract Step 7: 
 
 <img width="1466" height="524" alt="add7" src="https://github.com/user-attachments/assets/79d83688-ca88-435a-84e1-7978b78a2775" />
 
-- After submitting, there's options to start searching within your logs, extract them, add more data, download apps to have more options with the data, or you can build a dashboard.
+- After submitting, there's options to start searching within your logs, extract them, add more data, download apps to have more options with the data, or you can build a dashboard. In this case we will be selecting, 'Extract Fields'
 
+Ingestion + Extract Step 8: 
 
+<img width="1463" height="912" alt="extract 1" src="https://github.com/user-attachments/assets/b5839d93-1820-4cac-9b8b-e2b1005e2062" />
+
+- We selected our event from "access_combined" sourcetype to build our extraction rule from. 
+
+Ingestion + Extract Step 9:
+
+<img width="1396" height="463" alt="extract 2" src="https://github.com/user-attachments/assets/c10e7923-9047-4116-9527-77a3809f3234" />
+
+- Then it prompts you to choose the method which will determine how Splunk should extract the field as we choose Regular Expression since it works well with Apache logs.
+
+Ingestion + Extract Step 10:
+
+<img width="1436" height="633" alt="extract3" src="https://github.com/user-attachments/assets/ceccd127-5d76-46a2-9d97-6045b164c64a" />
+
+- We are selecting the IP ' 10.0.0.2 ' in the Apache log as our field. Splunk has made the decision to preview other logs with IP's as it follows the similarity of the first IP. I basically just trained it on what an IP looks like in our logs. 
+
+Ingestion + Extract Step 11: 
+
+<img width="1455" height="604" alt="extract4" src="https://github.com/user-attachments/assets/96be28fb-26ea-42c6-9681-27854ee316ec" />
+
+- This step is basically testing out our new field extraction to see if it works, in this case it does because Splunk successfully captured the other IP's from our ingested Apache logs. 
 
 
 Next: Basic Search and Filtering 
