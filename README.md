@@ -10,80 +10,45 @@ My journey in information technology has led me to develop a passion for cyberse
 
 Skills:
 
-- Network & Reconnaissance Skills
-- Log Analysis & SIEM Skills
-- Endpoint Security & Monitoring
-- Intrusion Detection & Prevention
-- Malware Analysis Fundamentals
-- Incident Response & Reporting
-- General Blue Team & Professional Skills
+
 
 Tools:
 
 Reconnaissance & Vulnerability Scanning:
 
--Nmap – Network scanning, host discovery, service and OS enumeration
-
--Nikto – Web server vulnerability and misconfiguration scanner
-
--cURL / Wget – Basic web requests and service testing
 
 
 Endpoint Security & Monitoring:
 
--Sysmon – Windows event and process logging
 
--Windows Event Viewer – Native tool for analyzing Windows logs
-
--Auditd – Linux auditing and logging tool
-
--UFW / Firewalld – Linux firewall configuration
-
--Task Manager & Process Explorer (Windows) – Process and service monitoring
 
 
 SIEM & Log Analysis:
 
--Wazuh – Open-source SIEM platform (Docker or standalone)
 
--ELK Stack (Elasticsearch, Logstash, Kibana) – Log ingestion, search, and visualization
 
 -Graylog – Log management and analysis
 
--Splunk Free – Industry-leading SIEM (trial version)
+
 
 
 Intrusion Detection & Prevention:
 
--Snort – Network-based IDS/IPS for Linux/Windows
+
 
 
 Web Application Security:
 
--Burp Suite Community – Web proxy and manual web vulnerability testing
 
--OWASP ZAP – Alternative open-source web application vulnerability scanner
 
 Malware Analysis & Investigation:
--file, strings, md5sum, sha256sum – Linux CLI tools for basic malware static analysis
+
 
 
 
 General Blue Team/Forensics:
 
--Wireshark – Network packet capture and analysis
 
--tcpdump – Command-line packet sniffer
-
--Autopsy/Sleuth Kit – Open-source digital forensics platform (optional)
-
-Supporting Tools: 
-
--Linux Terminal/Shell – For executing and automating tool workflows
-
--PowerShell (Windows) – Scripting and automation for detection/response
-
--Markdown Editors (VS Code, Typora, etc.) – Documentation and reporting
   
 Certifications:
 
